@@ -67,6 +67,7 @@ jobs:
         if: runner.os == 'macOS'
         run: >
           python -m nuitka
+          --mingw64
           --standalone
           --onefile
           --enable-plugin=pyqt5
